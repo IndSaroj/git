@@ -133,4 +133,12 @@
 #define GIT_CURL_HAVE_CURLAUTH_BEARER
 #endif
 
+/**
+ * CURLSSLOPT_AUTO_CLIENT_CERT was added in 7.77.0, released in May
+ * 2021.
+ */
+#if LIBCURL_VERSION_NUM >= 0x074d00
+#define GIT_CURL_HAVE_CURLSSLOPT_AUTO_CLIENT_CERT
+#endif
+
 #endif
